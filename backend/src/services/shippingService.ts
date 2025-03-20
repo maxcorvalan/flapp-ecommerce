@@ -1,4 +1,3 @@
-// src/services/shippingService.ts
 import axios from 'axios';
 
 // Credenciales para los servicios de envío
