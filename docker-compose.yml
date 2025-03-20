@@ -1,0 +1,28 @@
+﻿version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: flapp-backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: always
+    networks:
+      - flapp-network
+
+  frontend:
+    build: ./frontend
+    container_name: flapp-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always
+    networks:
+      - flapp-network
+
+networks:
+  flapp-network:
+    driver: bridge
