@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import { getProductsFromAPI } from '../services/productService';
 import { getTarificationFromTraeloYa, getTarificationFromUder } from '../services/shippingService';
 
-// La firma correcta para un controlador de Express
 export const processCart = async (req: Request, res: Response): Promise<Response> => {
   try {
     const { products, customer_data } = req.body;
