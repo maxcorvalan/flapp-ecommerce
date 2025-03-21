@@ -43,7 +43,7 @@ Esta es la forma más sencilla y garantiza que todo funcione correctamente en cu
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/flapp-ecommerce.git
+git clone https://github.com/maxcorvalan/flapp-ecommerce.git
 cd flapp-ecommerce
 ```
 
